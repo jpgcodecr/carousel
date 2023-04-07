@@ -1,11 +1,3 @@
-const wrap = (query, tag) => {
-    document.querySelectorAll( query ).forEach( elem => {
-      const div = document.createElement(tag);
-      elem.parentElement.insertBefore(div, elem);
-      div.appendChild(elem);
-    });
-};
-
 class UnityCarousel extends HTMLElement {
     constructor() {
         super();
